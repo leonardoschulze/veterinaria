@@ -8,7 +8,7 @@ body {
 .container {
     max-width: 800px;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -22,6 +22,7 @@ h1 {
 
 .form-group {
     margin-bottom: 20px;
+    
 }
 
 label {
@@ -31,20 +32,16 @@ label {
     font-weight: bold;
 }
 
-input,
-select,
-textarea {
+input, select, textarea {
     width: 100%;
     padding: 10px;
-    border: 2px solid #bdc3c7;
+    border: 2px solid #000000;
     border-radius: 5px;
     font-size: 16px;
     transition: border-color 0.3s ease;
 }
 
-input:focus,
-select:focus,
-textarea:focus {
+input:focus, select:focus, textarea:focus {
     border-color: #3498db;
     outline: none;
 }
@@ -61,7 +58,7 @@ textarea:focus {
 
 button {
     background-color: #3498db;
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 12px 24px;
     border: none;
     border-radius: 5px;
@@ -85,7 +82,7 @@ button:hover {
     background-color: #f9f9f9;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
-    padding: 20px;
+    padding: 25px;
     margin-bottom: 25px;
 }
 

@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<html lang=en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ordem de Serviço</title>
+    <title>Clinica Veterinária</title>
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js"></script>
 </head>
 
 <body>
@@ -13,11 +13,9 @@
 
     </header>
     <main>
-
         <div class="container">
-            <h1>Consulta Veterinário</h1>
+            <h1>Veterinário</h1>
             <form id="formOrdemServico">
-
                 <div class="form-section">
                     <h2>Dados do Cliente</h2>
                     <div class="form-row">
@@ -27,7 +25,8 @@
                         </div>
                         <div class="form-group">
                             <label for="telefone">Telefone:</label>
-                            <input type="tel" id="telefone" pattern="[0-9]{11}" required>
+                            <input type="tel" id="telefone" pattern="[0-9]{11}" required
+                                pattern="(\([0-9]{2})\s([9]{1})?([0-9]{4}))">
                         </div>
                         <div class="form-group">
                             <label for="email">E-mail:</label>
@@ -62,14 +61,12 @@
                             <input type="number" id="idade" min="0" max="18" required>
                         </div>
                     </div>
-                    <div>
-                        <input type="radio" id="Macho" name="fav_language" value="Macho">
-                        <label for="Macho">Macho</label><br>
-                        <input type="radio" id="femea" name="fav_language" value="femea">
-                        <label for="femea">Fêmea</label><br>
-                    </div>
+                    <label><strong>Sexo do Animal:</strong></label>
+                    <input type="radio" id="macho" name="Sexo" value="macho" required>
+                    <label for="macho">Macho</label>
+                    <input type="radio" id="femea" name="Sexo" value="femea" required>
+                    <label for="femea">Fêmea</label>
                 </div>
-                
 
                 <div class="form-section">
                     <h2>Detalhes da Consulta</h2>
